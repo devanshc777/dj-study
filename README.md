@@ -19,8 +19,22 @@ Video → transcript → technique note → practice recipe. The whole loop stay
 
 ## Install (Claude Code)
 
+```bash
+git clone https://github.com/devanshc777/dj-study.git
+```
+
+Then link the clone into your skills folder.
+
+Windows (PowerShell):
+
 ```powershell
 New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\dj-study" -Target "<clone-path>"
+```
+
+macOS / Linux:
+
+```bash
+ln -s "<clone-path>" ~/.claude/skills/dj-study
 ```
 
 Part of a personal music-learning pipeline; paths inside `SKILL.md` assume that setup — adjust to yours.
